@@ -19,3 +19,12 @@ class Duplicate {
         }
         return false;
     }}
+
+
+/*
+This questions can be solved by brute force by simply using two pointers to traverse through all the elements.
+But it requires o(n^2)
+
+the Optimal Solution is by using HashSet and simply check if the item presents in HashSet.
+It takes only O(1) time.
+ */
