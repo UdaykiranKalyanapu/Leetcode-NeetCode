@@ -25,7 +25,7 @@ String s = "MCMXCVIII";
            else{
                sum = sum + current;
            }
-        } // we can also use a logic called (smaller number is smaller than 1/4th of larger number)
+        } // we can also use a logic called (smaller number is smaller than 1/4th of larger number).
     System.out.println(sum);
     }
 }
