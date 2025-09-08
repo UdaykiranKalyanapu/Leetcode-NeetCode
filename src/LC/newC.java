@@ -37,7 +37,7 @@ class Solution {
                     left++;
                     right--;
 
-                    // Skip duplicates for 'left' and 'right' pointers
+                    // Skip duplicates
                     while (left < right && nums[left] == nums[left - 1]) {
                         left++;
                     }
