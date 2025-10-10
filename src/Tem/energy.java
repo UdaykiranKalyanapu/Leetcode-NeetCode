@@ -16,5 +16,5 @@ public class energy {
             }
 
             return maxEnergy;
-        }
+         }
     }
