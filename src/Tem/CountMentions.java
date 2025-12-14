@@ -48,4 +48,3 @@ public class CountMentions {
             return mentions;
         }
     }
-}
