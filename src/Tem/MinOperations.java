@@ -23,22 +23,16 @@ public class MinOperations {
             );
 
             odd += ~odd & 1;
-
             int even = Math.max(
                     (zero + k - 1) / k,
                     (zero + base - 1) / base
             );
-
             even += even & 1;
-
             int res = Integer.MAX_VALUE;
-
             if ((k & 1) == (zero & 1))
                 res = Math.min(res, odd);
-
             if ((~zero & 1) == 1)
                 res = Math.min(res, even);
-
             return res == Integer.MAX_VALUE ? -1 : res;
         }
     }
