@@ -9,3 +9,5 @@ public class RotateStrings {
             return (s + s).contains(goal);
         }
     }
+
+
