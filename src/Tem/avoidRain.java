@@ -14,13 +14,13 @@ public class avoidRain {
             for (int i = 0; i < n; i++) {
                 if (rains[i] == 0) {
                     dryDays.add(i);
-                    ans[i] = 1;  // default dry any lake
+                    ans[i] = 1;
                 } else {
                     int lake = rains[i];
                     ans[i] = -1;
                     if (full.containsKey(lake)) {
                         Integer dryDay = dryDays.higher(full.get(lake));
-                        if (dryDay == null) return new int[0]; // flood occurs
+                        if (dryDay == null) return new int[0];
                         ans[dryDay] = lake;
                         dryDays.remove(dryDay);
                     }
